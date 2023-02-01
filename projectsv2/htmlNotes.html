@@ -48,7 +48,74 @@
     <hr />
     
     <h2>Up Next Issss... <em>Tables!</em></h2>
-    
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th scope="col">Column 1</th>
+          <th scope="col">Column 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Row 1</th>
+          <td>(1,1)</td>
+          <td>(1,2)</td>
+        </tr>
+        <tr>
+          <th scope="row">Row 2</th>
+          <td>(2,1)</td>
+          <td>(2,2)</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Final Row</th>
+          <td>(3,1)</td>
+          <td>(3,2)</td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>Here, <b>th</b> tag is to define any heading, be it for the row or the column. Within th <code>scope="row" or scope="col"</code> atrributes are used.<br /> Tables are rendered row-wise, so th and td have to be enclosed in <b>tr</b>, <b>td</b> here denotes the cells.<br /> All of this code is enclosed under the <b>table</b> tag.</p>
+    <hr />
+
+    <h3><em>Give us your website review!</em></h3>
+
+    <form>
+      <p> Enter your Name:
+        <input type='text' name='name' maxlength=30>
+      </p>
+      <p> Enter Secret:
+        <input type='password' name='secret' maxlength=30>
+      </p>
+      <p> Your Thoughts:
+        <textarea name='thoughts' cols = 30 rows = 3> Enter your thoughts here...</textarea>
+      </p>
+      <p> Rate the page from 1 to 5: <br />
+        <input type="radio" name='rate' value='5' checked='checked'/> 5
+        <input type="radio" name='rate' value='4'/> 4
+        <input type="radio" name='rate' value='3'/> 3
+        <input type="radio" name='rate' value='2'/> 2
+        <input type="radio" name='rate' value='1'/> 1
+      </p>
+      <p> Your best learnings are: <br />
+        <input type="checkbox" name='learning' value='links' checked='checked'/> Links
+        <input type="checkbox" name='learning' value='forms'/> Forms
+        <input type="checkbox" name='learning' value='tables'/> Tables
+        <input type="checkbox" name='learning' value='highlights'/> Highlights
+        <input type="checkbox" name='learning' value='none''/> Something else
+      </p>
+      <p>
+        Select the device you are viewing this on: <br />
+        <select name="device">
+          <option value='mobile' selected="selected"> Mobile </option>
+          <option value='laptop'> Laptop </option>
+          <option value='pc'> Desktop </option>
+        </select>
+      </p>
+      <p>Submit: <input type="submit" name="submit"/></p>
+    </form>
     
   </body>
   
